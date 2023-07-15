@@ -38,6 +38,53 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### What I learned
 
+ I learned how to fetch JSON data from a local source using FETCH from JavaScript, enabling me to dynamically load and display information. 
+ 
+ ```javascript
+function fetchData() {
+  fetch('../data.json')
+    .then((res) => res.json())
+    .then((data) => {
+      let output = "";
+      data.forEach((item) => {
+        output += 
+        `<li>
+          <div class="category">
+            <img src="${item.icon}" alt="${item.category}"/>
+            <h4>${item.category}</h4>
+          </div>
+          <p>${item.score} <span>/ 100</span></p>
+        </li>`
+      })
+      document.getElementById('data').innerHTML = output;
+    })
+    .catch((error) => {
+      console.log(`Error Fetching data : ${error}`)
+      document.getElementById('data').innerHTML = 'Error Loading Data'
+    })
+  }
+  
+fetchData();
+```
+ Additionally, I discovered how to apply gradient backgrounds using CSS.
+ 
+ ```css
+  header {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+```
+
+ Moreover, I acquired the knowledge of responsive web design by utilizing the power of flex containers and media queries. 
+ ```css
+  @media only screen and (min-width: 582px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 8px 9px 18px -14px rgba(120, 87, 255, .5);
+    border-radius: 30px;
+    width: 90%;
+  }
+```
 
 ### Useful resources
 
