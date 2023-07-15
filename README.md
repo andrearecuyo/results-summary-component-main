@@ -24,8 +24,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Source Code]()
-- Live Site URL: [Demo]()
+- Solution URL: [Source Code](https://github.com/andrearecuyo/results-summary-component-main)
+- Live Site URL: [Demo](https://results-summary-component-ar.netlify.app/)
 
 ## My process
 
