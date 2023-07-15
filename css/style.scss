@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hanken Grotesk', sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  
+  
+  @media only screen and (min-width: 600px) {
+    margin: 0 0 2em 0;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(256, 72%, 46%);
+  &:hover {
+    cursor: pointer;
+    color: hsl(241, 81%, 54%);
+  }
+}
+
+section {
+  background-color: #FFFFFF;
+
+  @media only screen and (min-width: 583px) {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .component {
+    @media only screen and (min-width: 583px) {
+      display: flex;
+      justify-content: center;
+    }
+    
+  }
+  
+  .container {
+    header {
+      background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      text-align: center;
+      border-radius: 0 0 30px 30px;
+      padding: 30px 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media only screen and (min-width: 583px) {
+        width: 45%;
+        border-radius: 30px;
+      }
+
+      h1 {
+        color: #c8c7ff;
+        font-size: 1.2em;
+        font-weight: 500;
+      }
+
+      .score-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .score {
+          background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+          border-radius: 50%;
+          height: 150px;
+          width: 150px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          h2 {
+            color: #FFFFFF;
+            font-size: 3.2em;
+            line-height: 0.5px;
+            font-weight: 800;
+          }
+          span {
+            font-size: 0.9em;
+            font-weight: 500;
+            color: #c8c7ff;
+          }
+        }
+      }
+
+      .details {
+        h2 {
+          color: #FFFFFF;
+          font-weight: 700;
+        }
+        p {
+          color: #c8c7ff;
+          font-weight: 500;
+        }
+      }
+    }
+
+    @media only screen and (min-width: 1440px) {
+      header {
+        width: 35%;
+      }
+    }
+    
+    article {
+      margin: 2em;
+
+      @media only screen and (min-width: 583px) {
+        width: 45%;
+        margin: 0 2em 0 2em;
+      }
+
+      h3 {
+        color: hsl(224, 30%, 27%);
+        font-weight: 800;
+      }
+      ul {
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: hsla(0, 100%, 67%, 0.1);
+          border-radius: 10px;
+          padding: 0 20px;
+          margin: 15px 0;
+          /* Header 4 */
+          &:first-child {
+            background-color: hsla(0, 100%, 67%, 0.1);
+            color: hsl(0, 100%, 67%);
+          }
+          &:nth-child(2) {
+            background-color: hsla(39, 100%, 56%, 0.1);
+            color: hsl(39, 100%, 56%);
+          }
+          &:nth-child(3) {
+            background-color: hsla(166, 100%, 37%, 0.1);
+            color: hsl(166, 100%, 37%);
+          }
+          &:nth-child(4) {
+            background-color: hsla(234, 85%, 45%, 0.1);
+            color: hsl(234, 85%, 45%);
+          }
+          .category {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            h4 {
+              font-weight: 700;
+              line-height: 0px;
+            }
+          }
+          p {
+            color: hsl(224, 30%, 27%);
+            font-weight: 800;
+          }
+          span {
+            color: hsla(224, 30%, 27%, 0.5);
+            font-weight: 800;
+          }
+          @media only screen and (min-width: 582px) {
+            margin: 9px 0;
+          }
+        }
+      }
+
+      button {
+        background-color: hsl(224, 30%, 27%);
+        width: 100%;
+        outline: none;
+        border: 0;
+        padding: 15px;
+        border-radius: 30px;
+        color: #FFFFFF;
+        font-size: 1.1em;
+        font-weight: 500;
+        &:hover {
+          cursor: pointer;
+          background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        }
+      }
+    }
+
+    @media only screen and (min-width: 1440px) {
+      article {
+        width: 45%;
+        margin: 0 2em 0 2em;
+      }
+    }
+    
+
+    @media only screen and (min-width: 582px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 8px 9px 18px -14px rgba(120, 87, 255, .5);
+      border-radius: 30px;
+      width: 90%;
+    }
+  }
+  @media only screen and (min-width: 1440px) {
+    .container {
+      width: 80%;
+    }
+  }
+}
+
+.attribution {
+  padding: 10px 0;
+  font-size: 0.7em;
+  text-align: center;
+  margin: 2em;
+}
+
